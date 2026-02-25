@@ -29,4 +29,8 @@ A document-based Question Answering system built with Django and LangChain. It a
 git clone https://github.com/abolfazl9966/Docs-Q-A.git
 cd Docs-Q-A
 docker-compose up --build
-
+```
+2. **Fix openrouter api key:**
+   change OPENROUTER_API_KEY in .env to enable openrouter apikey
+   you can use this if not expired
+   OPENROUTER_API_KEY=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
