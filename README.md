@@ -28,4 +28,5 @@ A document-based Question Answering system built with Django and LangChain. It a
 ```bash
 git clone https://github.com/abolfazl9966/Docs-Q-A.git
 cd Docs-Q-A
+docker-compose up --build
 
