@@ -24,15 +24,25 @@ A document-based Question Answering system built with Django and LangChain. It a
 
 ### Step-by-Step Guide
 
-1.  **Clone the repository:**
+## 1.  **Clone the repository:**
 ```bash
 git clone https://github.com/abolfazl9966/Docs-Q-A.git
 cd Docs-Q-A
 docker-compose up --build
 ```
-2. **Fix openrouter api key:**
-   change OPENROUTER_API_KEY in .env to enable openrouter apikey
-   you can use this if not expired
-   ```bash
-   OPENROUTER_API_KEY=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
-   ```
+## 2. Create an OpenRouter API Key
+
+1. Go to **https://openrouter.ai**
+2. Sign in (GitHub / Google supported)
+3. Open the **API Keys** section:
+   https://openrouter.ai/keys
+4. Click **Create Key**
+5. Copy the generated API key
+
+---
+
+## 3. Add the API Key to `.env`
+
+Create a `.env` file in the project root (or edit the existing one):
+```env
+OPENROUTER_API_KEY=sk-or-v1-your_api_key_here
